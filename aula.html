@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas</title>
+    <link rel="stylesheet" href="aulacss.css">
+          
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper">
+                </div>
+            </div>
+        </div> 
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <a class="logonome" href="aula.html"> <img class="logo" src="https://uploaddeimagens.com.br/images/004/774/008/thumb/Captura_de_tela_2024-04-23_152751.png?1713896913"></a>
+            <nav>
+                <!-- links pras outras abas -->
+                <a class="cursoslink" href="cursos.html">Cursos</a>
+            </nav>
+    </header> 
+    <section> 
+    <h2 class="grade-title"> <a href="cursos.html">Ensino Fundamental</a></h2><br>
+    <main class="video_main">
+    <div class="container">
+        
+        
+ <div class="video-section">
+    <div class="discici"> <h1 class="disciplina">4º ano</h1> </div>
+    <div class="disci"> <h1 class="disciplina">Geografia</h1> </div>
+<iframe width="700" height="350" src="https://www.youtube.com/embed/MQxmQ0wVnDs" title="Sinais em Libras: Geografia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+        <div class="comment-toggle" id="commentToggle">
+            <img class="comenta" src="https://i.ibb.co/kxBkTwM/Captura-de-tela-2024-05-22-200238-removebg-preview.png" alt="Balão de Conversa" width="60px"><img class="likeoi" src="https://static.vecteezy.com/ti/vetor-gratis/p1/24882242-rosa-coracao-dentro-plano-estilo-vetor.jpg" width="49px">
+            
+        </div>
+        <div>
+            <h1 class="disciplina2222"> Aula seguinte:</h1>
+        <main class="video12">
+            
+            <div class="video-section_2">
+        
+                <iframe width="77%" src="https://www.youtube.com/embed/UlUv8pju0b8" title="Geografia em Libras" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+         </div><br><br><br><br>
+
+        <div class="comment-section" id="commentSection">
+            <h2>Dúvidas?</h2>
+            <p>Faça uma pergunta abaixo, entre em contato com o professor ou envie um vídeo com sua dúvida!</p><br><br>
+            <input  type="text" placeholder="Qual sua dúvida?"required>
+
+            <div class="actions">
+                <button class="actions5">Enviar</button>
+                <label for="upload">Enviar vídeo</label>
+                <input type="file" id="upload" accept="video/*">
+            </div>
+        </div>
+
+    </div>
+</main>
+
+</main>
+
+</section>
+<script>
+document.getElementById('commentToggle').addEventListener('click', function() {
+    var commentSection = document.getElementById('commentSection');
+    if (commentSection.style.display === 'none') {
+        commentSection.style.display = 'block';
+    } else {
+        commentSection.style.display = 'none';
+    }
+});
+</script>
+<BR>
+    <br>
+    <br>
+</body>
+<footer>
+    <ul class="redes-sociais">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/deafed_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.instagram.com/deafed_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+    <p class="pfooter">&copy; 2024                  @DeafEd</p>
+   </footer>
+</html>

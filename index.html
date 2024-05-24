@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login2css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper">
+                </div>
+            </div>
+        </div> 
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <a class="logonome"> <img class="logo" src="https://uploaddeimagens.com.br/images/004/774/008/thumb/Captura_de_tela_2024-04-23_152751.png?1713896913"></a>
+            <nav>
+                <!-- links pras outras abas -->
+                <a class="homelink" href="cadastro.html">Cadastro</a>
+            </nav>
+    </header>
+
+    <br>
+    <h1 class="bemvinde">Seja bem-vindo(a)!</h1>
+    <br>
+    <main>
+   
+    <section class="organizar">
+<div class="container">
+    <h1 class="facalogin">Faça o seu Login :</h1>
+    <p class="p">Use as suas informações pessoais</p>
+    <form  class="form" id="loginForm" onsubmit="return validarLogin()">
+        <input type="text" id="usuario" placeholder="Usuário" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" id="password" placeholder="Senha (Mínimo 6 caracteres)" required>
+        <input type="checkbox" id="show-password" onclick="togglePassword()"> Mostrar Senha
+        <button class="botoes"type="submit">Entrar</button>
+        <p class="pergunta">Ou entre com o Google:</p>
+        <button class="google-btn"> Continuar com o Google</button>
+        <p class="pergunta">É novo aqui? <a href="cadastro.html" class="signup-link">Cadastre-se</a></p>
+    </form>
+
+</div>
+
+<script>
+ function togglePassword() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Verifica se os campos de e-mail e senha estão preenchidos
+            if (email.trim() !== "" && password.trim() !== "") {
+                // Redireciona para a página desejada
+                window.location.href = "homepagedeafed.html";
+            }
+        });
+
+function redirecionar() {
+
+        location.href = "file:///C:/Users/Anthony/Documents/DeafEd/casdastro.html";
+    }
+</script>
+    </section>
+    <img class="images" src="https://uploaddeimagens.com.br/images/004/774/251/original/undraw_sign_up_n6im_%281%29_%281%29.png?1713919642"  width="750" height="370">
+</main>
+</body>
+
+<br><br>
+
+<footer>
+    <ul class="redes-sociais">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/deafed_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.instagram.com/deafed_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+    <p class="pfooter">&copy; 2024                  @DeafEd</p>
+   </footer>
+</html>
+<!-- <//login.html//> -->

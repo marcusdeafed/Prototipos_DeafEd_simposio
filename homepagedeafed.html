@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Plataforma de Estudos DeafEd</title>
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper">
+                </div>
+            </div>
+        </div> 
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+        <script>
+
+    // caixa de cookies
+    document.addEventListener("DOMContentLoaded", function() {
+        var banner = document.getElementById("cookie-banner");
+        var aceitarBtn = document.getElementById("aceitar");
+        var recusarBtn = document.getElementById("recusar");
+    
+        aceitarBtn.addEventListener("click", function() {
+            definirCookie("cookiesAceitos", "true", 365);
+            banner.style.display = "none";
+        });
+    
+        recusarBtn.addEventListener("click", function() {
+            definirCookie("cookiesAceitos", "false", 365);
+            banner.style.display = "none";
+        });
+    
+        function definirCookie(nome, valor, dias) {
+            var data = new Date();
+            data.setTime(data.getTime() + (dias * 24 * 60 * 60 * 1000));
+            var expira = "expires=" + data.toUTCString();
+            document.cookie = nome + "=" + valor + ";" + expira + ";path=/";
+        }
+    
+        function obterCookie(nome) {
+            var nomeCookie = nome + "=";
+            var cookies = decodeURIComponent(document.cookie).split(';');
+            for(var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) == ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(nomeCookie) == 0) {
+                    return cookie.substring(nomeCookie.length, cookie.length);
+                }
+            }
+            return "";
+        }
+    
+        function verificarCookiesAceitos() {
+            var cookiesAceitos = obterCookie("cookiesAceitos");
+            if (cookiesAceitos === "true") {
+                banner.style.display = "none";
+            } else if (cookiesAceitos === "false") {
+                banner.style.display = "none"; // ou outra ação, como redirecionar para uma página de privacidade
+            } else {
+                banner.style.display = "block";
+            }
+        }
+    
+        verificarCookiesAceitos();
+    });
+    </script>
+
+</head>    
+<body>
+    <header>
+        <!-- logo -->
+        <a class="logonome" href="homepagedeafed.html"> <img class="logo" src="https://uploaddeimagens.com.br/images/004/774/008/thumb/Captura_de_tela_2024-04-23_152751.png?1713896913"></a>
+            <nav>
+                <!-- links pras outras abas -->
+                <a class="homelink" href="homepagedeafed.html">Home</a>
+                <a class="cursoslink" href="cursos.html">Cursos</a>
+                <a class="contatoslink" href="contato.html">Contato</a>
+                <a class="perfillink" href="Pag_nao_encon.html">Perfil</a>
+            </nav>
+    </header>
+
+    <section>
+    <div calss="cabecalho">
+        <h1 class="titulo-inicio">Aprender é a única coisa de que a mente nunca se cansa,<br>
+             nunca tem medo e nunca se arrepende. <br><legend class="leonardo">Leonardo da Vinci</legend></h1>
+        <!-- imagem do site inicial -->
+        <div class="img111">
+            <img class="imagem1" src="https://fonotom.com.br/wp-content/uploads/2020/10/teleconsulta-para-aparelhos-auditivos-.png"> 
+            <br><br></div>
+   </div>
+
+            <div id="desafios">
+                <img class="img_desafios" src="https://i.ibb.co/Hhs7tkq/Captura-de-tela-2024-04-25-112530-removebg-preview.png">
+                    <div class="desafios">
+                        <h1 id="etapa1">
+                             Na primeira etapa da educação básica encontramos<br>
+                            diversos estudantes surdos com dificuldades em <br>
+                            <span class="alfabetização">acompanhar o conteúdo fora de sala.</span></h1>
+                        <p>
+                        Atualmente percebe-se um grande impasse por parte da criança<br>
+                        surda ao ingressar na escola, principalmente no processo inicial<br>
+                        decorrente de diversos fatores como: limitações pessoais, o co-<br>
+                        nhecimento parcial da língua pela qual se comunica (LIBRAS - <br>
+                        Língua Brasileira de Sinais), preparo não adequado dos professo-<br>
+                        res e profissionais envolvidos, defasagem na infraestrutura escolar,<br>
+                        entre outros. 
+                        </p>
+                        <br>
+                    </div>
+            </div>
+            <br>
+            <br>
+            <br>
+    <div class="div_deafed">
+        <span class="span_deafed"> <h1 id="title_deafed">E foi assim que surgiu a plataforma <span class="efeito_deafed"> DeafEd </span>  </h1>
+            <p> A Sinal de Aprendizagem desenvolveu a plataforma DeafEd com a missão de<br>
+                ajudar os estudantes surdos ou com deficiência auditiva, através de uma<br>
+                plataforma de estudos que funciona como um curso ou reforço escolar, <br>
+                com aulas das matérias dos anos iniciais, dos anos finais e diversos <br>
+                outros cursos e recursos todas ministradas em libras (Língua Brasileira de Sinais).<br>
+            </p>
+                <br>
+        </span>
+            <span id="span_slogan">
+                <img class="img_slogan" src="https://i.ibb.co/ct2VrHB/Captura-de-tela-2024-05-22-174244.png">
+                    <h3 class="slogan">“Abrindo mais portas do conhecimento<br></h3>
+                        <h3 class="slogan2"> a comunidade surda.”</h3>
+            </span>
+                <br>
+                <br>
+                <br>
+                <br><br>
+    </div>
+    <h2 class="situacao">A situação atual</h2>
+       
+           <div class="container">
+                <div class="textbox">
+
+                    <h2 class="caixadetexto">Na Educação</h2>
+                        <p class="caixadetextop">Na primeira etapa da educação básica encontram-se crianças surdas com dificuldades, principalmente no processo de alfabetização. De acordo com o censo de 2010, realizado pelo IBGE – Instituto Brasileiro de Geografia e Estatística, cerca de 1 milhão de crianças e jovens até 19 anos possuem deficiência auditiva. Acredita-se que hoje, 9 anos depois, esse número tenha aumentado, o que se leva a repensar sobre o aspecto inclusivo dessas pessoas no âmbito social, principalmente no escolar.<br>
+                        </p>
+            </div>
+                <br>
+            <div class="textbox">
+                <h2 class="caixadetexto">Na Escola</h2>
+                    <p class="caixadetextop">A inclusão de crianças surdas na sala de aula é de suma importância para uma aprendizagem eficaz. Analisa-se que, atualmente, muitos alunos surdos enfrentam dificuldades ao ingressarem numa instituição de ensino, devido à falta de infraestrutura e preparação dos profissionais do local. Quando se trata da questão da alfabetização para o grupo citado, encontra-se uma defasagem ainda maior, visto que é a partir dessa etapa que se desenvolvem as habilidades fundamentais de escrita e leitura, as quais são levadas por toda vida.<br></p>
+            </div>
+                <br>
+            <div class="textbox">
+                <h2 class="caixadetexto">No Brasil</h2>
+                    <p class="caixadetextop">A prática pedagógica do AEE para a pessoa surda são de suma importância para que ela possa se desenvolver e participar de forma eficiente e independente na sociedade na qual está inserida, visto que
+
+                    a inclusão do aluno com surdez deve acontecer desde a educação infantil até a Educação Superior, garantindo-lhe, utilizar os recursos de que necessita para superar as barreiras no processo educacional e usufruir seus direitos escolares, de acordo com os princípios constitucionais do nosso país (Damázio, 2007, p. 14).<br></p>
+
+            </div>
+           </div>
+        <br><br>
+
+        <div>
+            <p class="texto_objtv">
+                Nosso objetivo não consiste em substituir a escola,<br>
+                mas sim em fornecer o apoio necessário para <sapn class="atender"> atender</sapn><br>
+                 às necessidades dos <span class="estudantes">estudantes.</span></p>
+            <img class="crianca" src="https://i.ibb.co/Yj7B1RH/Captura-de-tela-2024-04-25-161323-removebg-preview.png">
+        </div>
+<br>
+<br>
+<br>
+<h2 class="quem">Quem somos?</h2>
+<br>
+        <div class="articles">
+            <article>
+                <figure>
+                    <img src="https://i.ibb.co/k4ZDmtt/evilla3333.jpg" alt="evilla">
+                </figure>
+                <div class="article-preview">
+                    <h2>Évilla Pereira</h2>
+                    
+                        <h1 class="funcao"> CEO, programadora.  <br></h1>
+                        <br>
+                        <p><spam class="descricao">É responsável pela visão estratégica do projeto, líder da equipe ,
+                         é a idealizadora do projeto e é responsável pela tomada de decisões
+                         de alto nível.
+                        </spam>
+
+                    </p>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://i.ibb.co/y0WfKBF/marcus2222.jpg" alt="marcus">
+                </figure>
+                <div class="article-preview">
+                    <h2>Marcus Rocha</h2>
+                    
+                        <h1 class="funcao">COO e programador. <br></h1>
+                        <br>
+                        <p><spam class="descricao">É responsável em verificar o andamento dos processos
+                             dentro do projeto, auxiliando os membros e garantindo que os processos
+                              funcionem sem problemas. 
+                        </spam>
+                    </p>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://i.ibb.co/Q9WsSss/perola.jpg" alt="perola">
+                </figure>
+                <div class="article-preview">
+                    <h2>Perola Ferreira</h2>
+                    
+                        <h1 class="funcao">CTO e programadora. <br></h1>
+                        <br>
+                        <p> <spam class="descricao">É responsável pelas estratégias de tecnologia do projeto,
+                             garantindo que as soluções tecnológicas da plataforma funcionem
+                              perfeitamente.</spam>
+                    </p>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://i.ibb.co/DGbCm8c/ester.jpg" alt="ester">
+                </figure>
+                <div class="article-preview">
+                    <h2>Ester Silva</h2>
+                    
+                        <h1 class="funcao">CIO, design e programadora. <br></h1>
+                        <br>
+                        <p><spam class="descricao">Responsável pelas estratégias de informação,
+                             gerenciando as tecnologias de informações do projeto e marketing.</spam>
+                    </p>
+                </div>
+            </article>
+        </div>
+    <br>
+    <br>
+       <div id="cookie-banner">
+        <p>Este site utiliza cookies para melhorar a sua experiência. Aceita o uso de cookies?</p>
+        <button id="aceitar">Aceitar</button>
+        <button id="recusar">Recusar</button>
+    </div>
+   
+</body>
+ <footer>
+        <ul class="redes-sociais">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/deafed_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/deafed_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <p class="pfooter">&copy; 2024                  @DeafEd</p>
+       </footer>
+</html>

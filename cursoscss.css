@@ -1,0 +1,474 @@
+
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+             /* tag css que seleciona o css inteiro */
+            max-width: 100vw;
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-size: medium;
+            text-decoration: none;
+            outline: none;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif; 
+        }
+        header {
+            max-width: 100%;
+            text-align: center;
+            border-style: ridge;
+            border-color: #311e1e;
+            border-width: 0;
+            border-bottom-width: 2px ;
+            background-color: #fff;
+            margin-left: 10px;
+            margin-right: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            color: #7B2CBF;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .logo { 
+            width: 170px;
+        }
+        .logo img {
+            width: 80px; margin-right: 15px;
+        }
+
+        .content {
+            padding: 20px; 
+        }
+        footer {
+            background-color: #7B2CBF;
+            text-align: center;
+            margin-top: auto;/* Mantém o footer no fundo */
+            color: #fff;
+            padding: 20px 0;
+            position: absolute;
+            width: 100%;
+            height: 2.8rem;   
+        }
+
+        .redes-sociais {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .redes-sociais li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .redes-sociais li a {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .redes-sociais li a:hover {
+            color: #C77DFF;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        .grade-section { 
+            margin-bottom: 30px; 
+        }
+        .grade-title {
+            color: #311e1e;
+            box-sizing: border-box; /* Inclui a largura da borda e do preenchimento no cálculo da largura */
+            width:  50%;
+            margin-left: 10px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-left: 5px solid #3d0a6f;
+            font-size: 20px; 
+            margin: 0 15px;
+            
+        }
+        .grade-section { 
+            margin-bottom: 30px; 
+        }
+        .year-group {
+            display: block; 
+            justify-content: space-around;  
+        }
+        .year-button { 
+            justify-content: center;
+            align-items: center;
+            display: block;
+            background-color: #CC88FF; 
+            padding: 10px;
+            width: 120px;
+            border-radius: 50px; 
+            cursor: pointer; 
+            margin: 5px; 
+            text-align: center;
+            transition: 1s;
+            
+        }
+        .year-button:hover {
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            -moz-transform: scale(1.1)  ;
+            -webkit-transform: scale(1.1)  ;
+            -o-transform: scale(1.1)  ;
+            -ms-transform: scale(1.1)  ;
+            transform: scale(1.1) ;
+        }
+        .disciplinas, .cronograma { 
+            display: none; 
+        }
+        .disciplinas.active, .cronograma.active { 
+            display: block; 
+        }
+        .disciplinas ul { 
+            display: flex; 
+            flex-wrap: wrap; 
+            list-style-type: none; 
+            padding: 0; 
+        }
+        .disciplinas li { 
+            flex: 1 0 20%; 
+            margin: 10px; 
+            background-color: #f7c7f7; 
+            padding: 15px; 
+            text-align: center; 
+            border-radius: 30px; 
+        }
+        .disciplinas li:hover {
+            transform: translateY(-10px);
+        }
+        nav a {
+            color: #311e1e;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: medium;
+        }
+        .homelink{
+            /* estilo do botao home, dentro da página home */
+            color: #311e1e;
+            text-decoration: none;
+            font-size: medium;
+            transition: 0.4s;
+        }
+        .homelink:hover{
+            transform: scaleX(20);
+            font-size: 23px;
+            color: #C783FA;
+            font-weight:bold ;
+        }
+        .cursoslink{
+            font-size: 23px;
+            color: #C783FA;
+            font-weight:bold ;
+            transition: 0.4s;
+        }
+        .cursoslink:hover{
+            color: #aa3bff;
+        }
+        .contatoslink{
+            color: #311e1e;
+            text-decoration: none;
+            font-size: medium;
+            transition: 0.4s;
+        }
+        .contatoslink:hover{
+            font-size: 23px;
+            color: #C783FA;
+            font-weight:bold ;
+        }
+        .perfillink{
+            color: #311e1e;
+            text-decoration: none;
+            font-size: medium;
+            transition: 0.4s;
+        }
+        .perfillink:hover{
+            font-size: 23px;
+            color: #C783FA;
+            font-weight:bold ;
+        }
+        .container {
+            background-color: #f2f2f2;
+            width: 50%;
+            display: flex;
+        }
+        .text-block {
+           background-color: #f2f2f2;
+           margin: 0 15px;
+           padding: 20px;
+           text-align: left;
+            display: flex;
+        }
+        .main-text {
+            text-align: left;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .arrow {
+            cursor: pointer;
+            font-size: 20px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .hidden-texts {
+           
+            display: none;
+            margin-top: 20px;
+        }
+        .hidden-texts a {
+            color: #311e1e;
+            margin-left: 25px;
+            margin: 10px;
+            text-align: left;
+            font-size: 18px;
+        }
+            
+        .dropdown {
+            width: 50; /* Define a largura de cada dropdown para 1/3 da largura da linha */
+            box-sizing: border-box; /* Inclui a largura da borda e do preenchimento no cálculo da largura */
+            padding: 10px; /* Adiciona algum espaçamento interno */
+            margin-left: 20px;
+            margin-top: 10px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .dropdown-button {
+            border-radius: 12px;
+            color: #f1f1f1;
+            background-color: #c170ff;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 200px;
+            justify-content: space-between;
+            transform: 0.8s;
+        }
+        .dropdown-button:hover{
+            background-color: #b350ff;
+        }
+       .margin-baixa{
+            margin-left: 20px;
+            margin-top: 0px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 10px;
+       }
+        .dropdown-button .arrow {
+            transition: transform 0.2s;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            min-width: 160px;
+            width: 100%;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-content.show {
+            display: block;
+        }
+
+        .dropdown-button.rotate .arrow {
+            transform: rotate(180deg);
+        }
+        .menor{
+            font-size: 15px;
+        }
+        .menor2{
+            font-size: 12px;
+        }
+        .menor3{
+            font-size: 13px;
+        }
+
+
+        /* Estilos para o contêiner principal */
+.container {
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* main{
+
+} */
+/* .corpo{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-sizing: border-box;
+} */
+  .img_fundamental{
+    max-width: 600px;
+    margin-right: 90px;
+    margin-top: 50px;
+    float: right;
+  }
+  .img_medio{
+    width: 500px;
+    margin-right: 50px;
+    margin-top: 170px;
+    float: right;
+  }
+  .img_preparatorio{
+    width: 550px;
+    margin-right: 20px;
+    margin-top: 150px;
+    float: right;
+  }
+  .img_outros{
+    width: 500px;
+    margin-right: 50px;
+    margin-top: 80px;
+    float: right;
+  }
+  @media screen and (min-width: 1439px) {
+    .img_outros{
+        width: 500px;
+        margin-right: -510px;
+        margin-top: 90px;
+        float: right;
+      }
+    .img_medio{
+        width: 500px;
+        margin-right: 50px;
+        margin-top: 100px;
+        float: right;
+    }
+    .img_preparatorio {
+        width: 550px;
+        margin-right: -540px;
+        margin-top: 100px;
+        float: right;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1919px) {
+    .img_fundamental{
+        max-width: 550px;
+        margin-right: 90px;
+        margin-top: 10px;
+        float: right;
+      }
+    .img_medio {
+        width: 500px;
+        margin-right: -490px;
+        margin-top: 50px;
+        float: right;
+    }
+    .img_outros{
+        width: 450px;
+        margin-right: 10px;
+        margin-top: 90px;
+        float: right;
+      }
+    .img_preparatorio {
+        width: 500px;
+        margin-right: -520px;
+        margin-top: 100px;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 2400PX) {
+    .img_fundamental{
+        max-width: 500px;
+        margin-right: 90px;
+        margin-top: 10px;
+        float: right;
+      }
+    .img_medio {
+        width: 450px;
+        margin-right: -470px;
+        margin-top: 140px;
+        float: right;
+    }
+    .img_outros{
+        width: 400px;
+        margin-right: -390px;
+        margin-top: 90px;
+        float: right;
+      }
+    .img_preparatorio {
+        width: 450px;
+        margin-right: 20px;
+        margin-top: 160px;
+        float: right;
+    }
+}
+@media screen and (max-width: 1170px) {
+
+.img_preparatorio{
+  width: 500px;
+  margin-right: 20px;
+  margin-top: 150px;
+  float: right;
+}
+}
+@media screen and (max-width: 1129px) {
+
+    .img_fundamental{
+        max-width: 600px;
+        margin-right: 10px;
+        margin-top: 50px;
+        float: right;
+      }
+    .img_medio {
+        width: 460px;
+        margin-right: 8px;
+        margin-top: 100px;
+        float: right;
+    }
+    .img_outros{
+        width: 450px;
+        margin-right: 10px;
+        margin-top: 190px;
+        float: right;
+      }
+      .img_preparatorio{
+        width: 460px;
+        margin-right: 0px;
+        margin-top: 150px;
+        float: right;
+      }
+}
+@media screen and (max-width: 1170px) {
+
+
+
+}
+  @media screen and (max-width: 768px) {
+    .dropdown {
+      width: 50%; /* Define a largura de cada dropdown para 50% da largura da tela */
+    }
+  }
+  

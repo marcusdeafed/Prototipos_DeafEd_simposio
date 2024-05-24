@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>DeafEdcadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="cadastrocss.css">
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+        </div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper">
+                </div>
+            </div>
+        </div> 
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <a class="logonome" href="cadastro.html"> <img class="logo" src="https://uploaddeimagens.com.br/images/004/774/008/thumb/Captura_de_tela_2024-04-23_152751.png?1713896913"></a>
+            <nav>
+                <!-- links pras outras abas -->
+                <a class="loginlink" href="index.html">Login</a>
+            </nav>
+    </header><br>
+    <section class="ola">
+        <h1 class="jornada">Faça já o seu <span class="cad">cadastro</span><br> e se aprofunde na jornada do <span class="conhecimento"> conhecimento!</span></h1>
+            <br>
+        <img class="images" src="https://uploaddeimagens.com.br/images/004/775/081/original/cadastre-se.png?1714039371">
+    </section>
+    <!--TELA CADASTRO DE NOVOS USUÁRIOS-->
+<section class="cadastrese">
+        <div class="cadastro">
+            <div class="cadastro2">
+                
+                <h2 class="title">Faça o seu Cadastro</h2>
+                <form class="button">
+                    <legend class="legend">informações Pessoais</legend><br>
+                    <input class="buttonn" type="text" placeholder="Usuário (Nome completo)" required><br>
+                    <legend class="legend">Informe seu gênero:</legend><br>
+                    <span class="genero">
+                        <input class="Feminino" type="radio" name="sex" value="Feminino"> Feminino 
+                        <input class="Masculino" type="radio" name="sex" value="Masculino"> Masculino 
+                        <input class="Outro" type="radio" name="sex" value="Outro"> Outro 
+                        <input class="Prefironaoinformar" type="radio" name="sex" value="Prefironaoinformar"> Prefiro não informar <br>
+    <br>
+                        </span>
+                    <input class="buttonn" type="email" placeholder="Email" required><br>
+                    <input class="buttonn" type="password" name="password" id="password" placeholder="Senha (Mínimo 6 caracteres)" required>
+                    <input type="checkbox" id="show-password" onclick="togglePassword()"> Mostrar Senha
+                    <br>
+                    <input class="buttonn" type="numberphone" placeholder="Número de telefone "required><br>
+                    <!-- <input class="buttonn"  type="text" placeholder="Instuição/Escola onde estuda"required><br> -->
+                    <legend class="legend">Data de nascimento</legend><br>
+                    <input class="buttonn"  type="date" placeholder="Data de nascimento"required><br>
+                    
+                    <legend class="legend">Escolha um plano:</legend><br>
+                    <span>
+                        <input class="Plano_Individual" type="radio" name="Plano" value="Plano_Individual">  Plano Individual
+                        <input class="Plano_Família" type="radio" name="Plano" value="Plano_Família">  Plano Família
+                        <input class="Plano_Empresarial" type="radio" name="Plano" value="Plano_Empresarial">  Plano Empresarial<br>
+                    <div class="div_planos">
+                        <img class="img_planos" src="https://i.ibb.co/x11NXYZ/Captura-de-tela-2024-05-17-143828.png" alt="plano individual">
+                        <img class="img_planos" src="https://i.ibb.co/fnBgQx9/Captura-de-tela-2024-05-17-143837.png" alt="palno familia">
+                        <img class="img_planos" src="https://i.ibb.co/12zvHMh/Captura-de-tela-2024-05-17-143906.png" alt="plano empresarial">
+                    </div>
+                    <div class="btnassinar">
+                        <button class="assinar"  type="submit" href="#planospagos">ASSINAR</button>
+                    </div>
+                    </span>
+                   
+                </section><br>
+
+                <script>
+                    function togglePassword() {
+                                   var x = document.getElementById("password");
+                                   if (x.type === "password") {
+                                       x.type = "text";
+                                   } else {
+                                       x.type = "password";
+                                   }
+                               }
+                </script>
+<br><br><br>
+    <footer class="footer">
+        <ul class="redes-sociais">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/deafed_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <p class="pfooter">&copy; 2024                                                                                                                             @DeafEd</p>
+       </footer>
+</body>
+</html>
